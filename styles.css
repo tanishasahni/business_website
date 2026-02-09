@@ -1,0 +1,170 @@
+/* Base page styles */
+body {
+  margin: 0; /* Remove default margin */
+  font-family: 'Trebuchet MS', Verdana, Geneva, sans-serif; /* Body font */
+  background-color: #ebf4f5; /* Main background */
+  color: #123357; 
+}
+
+/* Header */
+header {
+  background-color: #e1ebed; /* Header background */
+  padding: 20px; /* Space */
+  overflow: hidden; /* Clear floats */
+}
+
+/* Logo */
+#logo {
+  float: left; /* Left side */
+}
+
+#logo h1 {
+  margin: 0; /* Remove margin */
+  font-family: Tahoma, Verdana, Geneva, sans-serif; /* Logo font */
+  font-weight: bold;
+  color: #123357; 
+}
+
+/* Logo link */
+.logo-link {
+  color: #123357;          /* Original blue */
+  text-decoration: none;    /* No underline */
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+}
+
+/* Hover effect: lighter blue */
+.logo-link:hover {
+  color: #4a7abf;           /* Light blue on hover */
+  text-decoration: none;    /* Keep no underline */
+}
+
+/* Navigation */
+nav {
+  float: right; /* Right side */
+}
+
+nav a {
+  margin-left: 15px; /* Spacing */
+  text-decoration: none; /* No underline */
+  color: #123357; 
+  font-weight: 600; /* Semi-bold */
+  font-family: 'Trebuchet MS', Verdana, Geneva, sans-serif;
+}
+
+/* Hover effect underline links */
+nav a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Divider lines */
+.divider {
+  height: 4px; /* Thickness */
+  background-color: #123357; 
+}
+
+/* Banner */
+#banner {
+  height: 450px; /* Banner height */
+  background-image: url('images/banner.jpg'); /* Banner image */
+  background-size: cover; /* Fill the entire div */
+  background-position: center; 
+  background-repeat: no-repeat; 
+
+  display: flex; /* To position text */
+  align-items: center; 
+  justify-content: flex-start; /* Align text to the left */
+  padding-left: 40px; 
+
+  box-sizing: border-box;
+  color: #123357; 
+}
+
+#banner p {
+  font-size: 24px; /* Text size */
+  margin: 0; /* Remove default margin */
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px; /* Space top/bottom and safe side padding */
+  text-align: center; /* Center text */
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+/* Limit line width for readable text */
+section p,
+section ul {
+  max-width: 800px;       /* Prevent text from stretching too wide */
+  margin: 0 auto;         /* Center content horizontally */
+  line-height: 1.6;       /* Improve scan-ability */
+}
+
+/* Product boxes */
+.product {
+  display: inline-block; /* Side by side */
+  width: 20%; /* Width */
+  border: 2px solid #123357; /* Border */
+  padding: 20px; /* Space */
+  margin: 10px; /* Space */
+  vertical-align: top; /* Align */
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+.product img.product-image {
+  width: 80%;      /* Make image smaller inside the box */
+  max-width: 200px; /* Optional: ensure it doesn’t get too big */
+  height: auto;    /* Keep proportions correct */
+  display: block;  /* Remove extra space below image */
+  margin: 10px auto; /* Center image with space above and below */
+}
+
+/* Product links */
+.product-link {
+  color: #123357;        /* Blue text */
+  text-decoration: none;  /* No underline by default */
+  display: block;         /* Make the whole block clickable */
+}
+
+/* Show underline only on hover */
+.product-link:hover h3 {
+  text-decoration: underline;
+}
+
+/* About section */
+#about {
+  background-color: #e1ebed; /* About background */
+}
+
+/* Why list */
+.why-list {
+  list-style-position: inside; 
+  display: inline-block; /* Center */
+  text-align: left;
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+  
+}
+
+/* Footer */
+footer {
+  background-color: #e1ebed; 
+  padding: 20px; /* Space */
+  overflow: hidden; /* Clear floats */
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+#footer-left {
+  float: left; /* Left */
+}
+
+#footer-right {
+  float: right; /* Right */
+}
+
+footer a {
+  text-decoration: none; /* No underline */
+  color: #123357; 
+  font-weight: 600; /* Semi-bold */
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
