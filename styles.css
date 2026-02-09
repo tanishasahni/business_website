@@ -59,20 +59,20 @@ footer a:hover {
 
 /* Divider lines */
 .divider {
-  height: 4px; /* Thickness */
+  height: 4px; 
   background-color: #123357; 
 }
 
 /* Banner */
 #banner {
   width: 100%;
-  height: 450px; /* Banner height */
-  background-image: url('images/banner.jpg'); /* Banner image */
+  height: 450px; 
+  background-image: url('images/banner.jpg'); 
   background-size: cover; /* Show entire image without cropping */
   background-position: center; 
   background-repeat: no-repeat; 
 
-  display: flex; /* To position text */
+  display: flex; /* position text */
   align-items: center; 
   justify-content: flex-start; /* Align text to the left */
   padding-left: 40px; 
@@ -82,24 +82,24 @@ footer a:hover {
 }
 
 #banner p {
-  font-size: 24px; /* Text size */
-  margin: 0; /* Remove default margin */
+  font-size: 24px; 
+  margin: 0; 
   font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
 
 /* Sections */
 section {
-  padding: 40px 20px; /* Space top/bottom and safe side padding */
-  text-align: center; /* Center text */
+  padding: 40px 20px; 
+  text-align: center; 
   font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
 
-/* Limit line width for readable text */
+/* Stop text from stretching too far */
 section p,
 section ul {
-  max-width: 800px;       /* Prevent text from stretching too wide */
-  margin: 0 auto;         /* Center content horizontally */
-  line-height: 1.6;       /* Improve scan-ability */
+  max-width: 800px;
+  margin: 0 auto; /* Center content horizontally */
+  line-height: 1.6;
 }
 
 /* Product boxes */
@@ -114,11 +114,11 @@ section ul {
 }
 
 .product img.product-image {
-  width: 80%;      /* Make image smaller inside the box */
-  max-width: 200px; /* Optional: ensure it doesn’t get too big */
-  height: auto;    /* Keep proportions correct */
-  display: block;  /* Remove extra space below image */
-  margin: 10px auto; /* Center image with space above and below */
+  width: 80%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
 }
 
 /* Product links */
@@ -170,7 +170,7 @@ footer a {
   font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
 
-/* Mobile styles */
+/* Mobile */
 @media screen and (max-width: 768px) {
 
   /* Product boxes */
