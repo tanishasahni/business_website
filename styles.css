@@ -4,8 +4,6 @@ body {
   font-family: 'Trebuchet MS', Verdana, sans-serif; 
   background-color: #ebf4f5; 
   color: #123357; 
-  padding-left: 20px;   /* Text padding for all pages */
-  padding-right: 20px;
 }
 
 /* Header */
@@ -85,12 +83,12 @@ footer a:hover {
   font-size: 24px; 
   margin: 0; 
   font-family: 'Trebuchet MS', Verdana, sans-serif;
-  max-width: 90%; /* ensure text doesn’t overflow banner */
+  max-width: 90%; /* ensures text stays readable */
 }
 
 /* Sections */
 section {
-  padding: 40px 0; /* space top/bottom */
+  padding: 40px 20px; /* Space top/bottom and safe side padding */
   text-align: center; 
   font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
@@ -101,7 +99,6 @@ section ul {
   max-width: 700px;     
   margin: 0 auto;       
   line-height: 1.6;     
-  text-align: center;    /* optional: change to left if you want */
 }
 
 /* Product boxes */
@@ -180,27 +177,32 @@ footer a {
     margin: 20px auto; 
   }
 
-  /* Text stays inside the box */
+  /* Text inside product boxes */
   .product p {
     font-size: 16px;
     word-wrap: break-word; 
   }
 
-  /* Banner for mobile screen */
+  /* Banner crop for mobile portrait */
   #banner {
-    height: 50vh;                  /* Banner takes half of viewport height */
+    height: 50vh;                 /* Banner is half of viewport height */
     background-size: cover;       
-    background-position: top center; /* crop from top for portrait */
-    padding-left: 20px; 
+    background-position: top center; /* Crop image from top */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;           /* Only text padding */
     padding-right: 20px;
   }
 
   #banner p {
     font-size: 20px;
     max-width: 90%; 
+    margin: 0;
   }
 
-  /* Section text max-width still applies */
+  /* Section text stays readable */
   section p,
   section ul {
     max-width: 90%; 
