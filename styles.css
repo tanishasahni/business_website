@@ -188,6 +188,7 @@ footer a {
   #banner {
     height: 70vh; /* Use screen height instead */
     padding-left: 20px; 
+    background-image: url('images/banner-mobile.jpg'); /* Different image for mobile */
   }
 
   #banner p {
