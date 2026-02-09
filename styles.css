@@ -67,7 +67,7 @@ footer a:hover {
 #banner {
   height: 450px; /* Banner height */
   background-image: url('images/banner.jpg'); /* Banner image */
-  background-size: auto 50%; /* Show entire image without cropping */
+  background-size: auto 100%; /* Show entire image without cropping */
   background-position: center; 
   background-repeat: no-repeat; 
 
