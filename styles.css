@@ -1,54 +1,54 @@
 /* Base page styles */
 body {
-  margin: 0; /* Remove default margin */
-  font-family: 'Trebuchet MS', Verdana, Geneva, sans-serif; /* Body font */
-  background-color: #ebf4f5; /* Main background */
+  margin: 0; 
+  font-family: 'Trebuchet MS', Verdana, sans-serif; 
+  background-color: #ebf4f5; 
   color: #123357; 
 }
 
 /* Header */
 header {
-  background-color: #e1ebed; /* Header background */
-  padding: 20px; /* Space */
-  overflow: hidden; /* Clear floats */
+  background-color: #e1ebed; 
+  padding: 20px; 
+  overflow: hidden; 
 }
 
 /* Logo */
 #logo {
-  float: left; /* Left side */
+  float: left; 
 }
 
 #logo h1 {
-  margin: 0; /* Remove margin */
-  font-family: Tahoma, Verdana, Geneva, sans-serif; /* Logo font */
+  margin: 0; 
+  font-family: Tahoma, Verdana, sans-serif; 
   font-weight: bold;
   color: #123357; 
 }
 
 /* Logo link */
 .logo-link {
-  color: #123357;          /* Original blue */
-  text-decoration: none;    /* No underline */
-  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  color: #123357;
+  text-decoration: none;
+  font-family: Tahoma, Verdana, sans-serif;
 }
 
 /* Hover effect: lighter blue */
 .logo-link:hover {
-  color: #4a7abf;           /* Light blue on hover */
-  text-decoration: none;    /* Keep no underline */
+  color: #4a7abf;
+  text-decoration: none;
 }
 
 /* Navigation */
 nav {
-  float: right; /* Right side */
+  float: right;
 }
 
 nav a {
-  margin-left: 15px; /* Spacing */
-  text-decoration: none; /* No underline */
+  margin-left: 15px;
+  text-decoration: none;
   color: #123357; 
-  font-weight: 600; /* Semi-bold */
-  font-family: 'Trebuchet MS', Verdana, Geneva, sans-serif;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
 
 /* Hover effect underline links */
@@ -103,12 +103,12 @@ section ul {
 
 /* Product boxes */
 .product {
-  display: inline-block; /* Side by side */
-  width: 20%; /* Width */
-  border: 2px solid #123357; /* Border */
-  padding: 20px; /* Space */
-  margin: 10px; /* Space */
-  vertical-align: top; /* Align */
+  display: inline-block; 
+  width: 20%; 
+  border: 2px solid #123357; 
+  padding: 20px; 
+  margin: 10px; 
+  vertical-align: top; 
   font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
 
@@ -122,9 +122,9 @@ section ul {
 
 /* Product links */
 .product-link {
-  color: #123357;        /* Blue text */
-  text-decoration: none;  /* No underline by default */
-  display: block;         /* Make the whole block clickable */
+  color: #123357; 
+  text-decoration: none; 
+  display: block;        
 }
 
 /* Show underline only on hover */
@@ -134,13 +134,13 @@ section ul {
 
 /* About section */
 #about {
-  background-color: #e1ebed; /* About background */
+  background-color: #e1ebed; 
 }
 
 /* Why list */
 .why-list {
   list-style-position: inside; 
-  display: inline-block; /* Center */
+  display: inline-block; 
   text-align: left;
   font-family: 'Trebuchet MS', Verdana, sans-serif;
   
@@ -149,22 +149,49 @@ section ul {
 /* Footer */
 footer {
   background-color: #e1ebed; 
-  padding: 20px; /* Space */
-  overflow: hidden; /* Clear floats */
+  padding: 20px;
+  overflow: hidden;
   font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
 
 #footer-left {
-  float: left; /* Left */
+  float: left; 
 }
 
 #footer-right {
-  float: right; /* Right */
+  float: right; 
 }
 
 footer a {
-  text-decoration: none; /* No underline */
+  text-decoration: none;
   color: #123357; 
-  font-weight: 600; /* Semi-bold */
+  font-weight: 600; 
   font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+  /* Product boxes */
+  .product {
+    width: 90%; 
+    margin: 20px auto; 
+  }
+
+  /* Text stays inside the box */
+  .product p {
+    font-size: 16px;
+    word-wrap: break-word; /* Prevent text overflow */
+  }
+
+  /* Banner for mobile screen */
+  #banner {
+    height: 70vh; /* Use screen height instead */
+    padding-left: 20px; 
+  }
+
+  #banner p {
+    font-size: 20px;
+    max-width: 90%; /* Prevent text overflow */
+  }
 }
