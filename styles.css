@@ -4,6 +4,8 @@ body {
   font-family: 'Trebuchet MS', Verdana, sans-serif; 
   background-color: #ebf4f5; 
   color: #123357; 
+  padding-left: 20px;   /* Text padding for all pages */
+  padding-right: 20px;
 }
 
 /* Header */
@@ -59,46 +61,47 @@ footer a:hover {
 
 /* Divider lines */
 .divider {
-  height: 4px; /* Thickness */
+  height: 4px; 
   background-color: #123357; 
 }
 
 /* Banner */
 #banner {
-  height: 450px; /* Banner height */
-  background-image: url('images/banner.jpg'); /* Banner image */
-  background-size: cover; /* Fill the entire div */
+  height: 450px; 
+  background-image: url('images/banner.jpg'); 
+  background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
 
-  display: flex; /* To position text */
+  display: flex; 
   align-items: center; 
-  justify-content: flex-start; /* Align text to the left */
+  justify-content: flex-start; 
   padding-left: 40px; 
-
   box-sizing: border-box;
   color: #123357; 
 }
 
 #banner p {
-  font-size: 24px; /* Text size */
-  margin: 0; /* Remove default margin */
+  font-size: 24px; 
+  margin: 0; 
   font-family: 'Trebuchet MS', Verdana, sans-serif;
+  max-width: 90%; /* ensure text doesn’t overflow banner */
 }
 
 /* Sections */
 section {
-  padding: 40px 20px; /* Space top/bottom and safe side padding */
-  text-align: center; /* Center text */
+  padding: 40px 0; /* space top/bottom */
+  text-align: center; 
   font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
 
 /* Limit line width for readable text */
 section p,
 section ul {
-  max-width: 800px;       /* Prevent text from stretching too wide */
-  margin: 0 auto;         /* Center content horizontally */
-  line-height: 1.6;       /* Improve scan-ability */
+  max-width: 700px;     
+  margin: 0 auto;       
+  line-height: 1.6;     
+  text-align: center;    /* optional: change to left if you want */
 }
 
 /* Product boxes */
@@ -113,11 +116,11 @@ section ul {
 }
 
 .product img.product-image {
-  width: 80%;      /* Make image smaller inside the box */
-  max-width: 200px; /* Optional: ensure it doesn’t get too big */
-  height: auto;    /* Keep proportions correct */
-  display: block;  /* Remove extra space below image */
-  margin: 10px auto; /* Center image with space above and below */
+  width: 80%;      
+  max-width: 200px; 
+  height: auto;    
+  display: block;  
+  margin: 10px auto; 
 }
 
 /* Product links */
@@ -143,7 +146,6 @@ section ul {
   display: inline-block; 
   text-align: left;
   font-family: 'Trebuchet MS', Verdana, sans-serif;
-  
 }
 
 /* Footer */
@@ -181,17 +183,28 @@ footer a {
   /* Text stays inside the box */
   .product p {
     font-size: 16px;
-    word-wrap: break-word; /* Prevent text overflow */
+    word-wrap: break-word; 
   }
 
   /* Banner for mobile screen */
   #banner {
-    height: 70vh; /* Use screen height instead */
+    height: 50vh;                  /* Banner takes half of viewport height */
+    background-size: cover;       
+    background-position: top center; /* crop from top for portrait */
     padding-left: 20px; 
+    padding-right: 20px;
   }
 
   #banner p {
     font-size: 20px;
-    max-width: 90%; /* Prevent text overflow */
+    max-width: 90%; 
+  }
+
+  /* Section text max-width still applies */
+  section p,
+  section ul {
+    max-width: 90%; 
+    margin: 0 auto;
+    line-height: 1.6;
   }
 }
