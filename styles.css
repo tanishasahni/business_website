@@ -65,6 +65,7 @@ footer a:hover {
 
 /* Banner */
 #banner {
+  width: 100%;
   height: 450px; /* Banner height */
   background-image: url('images/banner.jpg'); /* Banner image */
   background-size: cover; /* Show entire image without cropping */
@@ -186,9 +187,12 @@ footer a {
 
   /* Banner for mobile screen */
   #banner {
+    width: 100%; 
     height: 70vh; /* Use screen height instead */
     padding-left: 20px; 
     background-image: url('images/banner-mobile.jpg'); /* Different image for mobile */
+    background-size: cover; /* ADD THIS - ensures image fills container */
+    background-position: center; /* ADD THIS - keeps image centered */
   }
 
   #banner p {
