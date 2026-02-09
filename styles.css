@@ -59,46 +59,46 @@ footer a:hover {
 
 /* Divider lines */
 .divider {
-  height: 4px; 
+  height: 4px; /* Thickness */
   background-color: #123357; 
 }
 
 /* Banner */
 #banner {
-  height: 450px; 
-  background-image: url('images/banner.jpg'); 
-  background-size: cover; 
+  height: 450px; /* Banner height */
+  background-image: url('images/banner.jpg'); /* Banner image */
+  background-size: contain; /* Show entire image without cropping */
   background-position: center; 
   background-repeat: no-repeat; 
 
-  display: flex; 
+  display: flex; /* To position text */
   align-items: center; 
-  justify-content: flex-start; 
+  justify-content: flex-start; /* Align text to the left */
   padding-left: 40px; 
+
   box-sizing: border-box;
   color: #123357; 
 }
 
 #banner p {
-  font-size: 24px; 
-  margin: 0; 
+  font-size: 24px; /* Text size */
+  margin: 0; /* Remove default margin */
   font-family: 'Trebuchet MS', Verdana, sans-serif;
-  max-width: 90%; /* ensures text stays readable */
 }
 
 /* Sections */
 section {
   padding: 40px 20px; /* Space top/bottom and safe side padding */
-  text-align: center; 
+  text-align: center; /* Center text */
   font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
 
 /* Limit line width for readable text */
 section p,
 section ul {
-  max-width: 700px;     
-  margin: 0 auto;       
-  line-height: 1.6;     
+  max-width: 800px;       /* Prevent text from stretching too wide */
+  margin: 0 auto;         /* Center content horizontally */
+  line-height: 1.6;       /* Improve scan-ability */
 }
 
 /* Product boxes */
@@ -113,11 +113,11 @@ section ul {
 }
 
 .product img.product-image {
-  width: 80%;      
-  max-width: 200px; 
-  height: auto;    
-  display: block;  
-  margin: 10px auto; 
+  width: 80%;      /* Make image smaller inside the box */
+  max-width: 200px; /* Optional: ensure it doesn’t get too big */
+  height: auto;    /* Keep proportions correct */
+  display: block;  /* Remove extra space below image */
+  margin: 10px auto; /* Center image with space above and below */
 }
 
 /* Product links */
@@ -143,6 +143,7 @@ section ul {
   display: inline-block; 
   text-align: left;
   font-family: 'Trebuchet MS', Verdana, sans-serif;
+  
 }
 
 /* Footer */
@@ -177,36 +178,20 @@ footer a {
     margin: 20px auto; 
   }
 
-  /* Text inside product boxes */
+  /* Text stays inside the box */
   .product p {
     font-size: 16px;
-    word-wrap: break-word; 
+    word-wrap: break-word; /* Prevent text overflow */
   }
 
-  /* Banner crop for mobile portrait */
+  /* Banner for mobile screen */
   #banner {
-    height: 50vh;                 /* Banner is half of viewport height */
-    background-size: cover;       
-    background-position: top center; /* Crop image from top */
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 20px;           /* Only text padding */
-    padding-right: 20px;
+    height: 70vh; /* Use screen height instead */
+    padding-left: 20px; 
   }
 
   #banner p {
     font-size: 20px;
-    max-width: 90%; 
-    margin: 0;
-  }
-
-  /* Section text stays readable */
-  section p,
-  section ul {
-    max-width: 90%; 
-    margin: 0 auto;
-    line-height: 1.6;
+    max-width: 90%; /* Prevent text overflow */
   }
 }
